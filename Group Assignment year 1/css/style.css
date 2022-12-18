@@ -1,0 +1,398 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+/*Josh's stuff goes here*/
+#top-title {
+    position: absolute;
+    align-items: center;
+}
+
+
+#top-title {
+    position: center;
+    color: brown;
+}
+
+#topper {
+    min-height: 12vh ;
+    min-width: 100%;
+    background-color: burlywood;
+}
+
+#landing {
+    height: 120vh;
+    width: 100%;
+    background-image: url("../img/landing.png");
+    background-size: cover;
+    position: relative;
+}
+
+.text-box {
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Montserrat, serif;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid burlywood;
+    background: burlywood;
+    transition: 1s;
+}
+
+#box {
+    background-color: black;
+    border: 5px;
+    width: 50vh;
+    height: 25vh;
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(240, 240, 240);
+  }
+
+#footer h4 {
+    font-weight: 600;
+    color: burlywood;
+}
+
+.closer h3 {
+    font-weight: 500;
+}
+
+.icons .fa {
+    color: burlywood;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+/* Nav Bar (Josh) */
+#primary-nav {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    max-height: 10vh;
+}
+
+.mobile-toggle-button {
+    display: none;
+}
+
+.logo {
+    margin: 2rem;
+    width: 125px;
+}
+
+.primary-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(214, 0%, 0, 0.1);
+    backdrop-filter: blur(1rem);
+}
+
+@media (max-width: 35em) {
+    .primary-nav {
+        --gap: 3em;
+        position: fixed;
+        inset: 0 0 0 30%;
+        padding: min(30vh, 10rem) 2em;
+        flex-direction: column;
+
+        z-index: 1000;
+        
+        background: hsl(214, 0%, 0, 0.1);
+        backdrop-filter: blur(1rem);
+
+        transform: translateX(100%);
+        overflow-x: hidden;
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-nav[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    
+    .mobile-toggle-button {
+        position: absolute;
+
+        background-color: transparent;
+        background: url("img/menu-icon.svg");
+        background-repeat: no-repeat;
+
+        border: 0;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+
+        z-index: 9999;
+        display: block;
+    }
+
+    .mobile-toggle-button[aria-expanded="true"] {
+        background-image: url("img/close-icon.svg");
+    }
+}
+
+@media (min-width: 35em) {
+    .primary-nav {
+        padding-block: 1rem;
+        padding-inline: clamp(3rem, 5vw, 10rem);
+    }
+}
+
+.font {
+    font-family: Anton, serif;
+    color: burlywood;
+    letter-spacing: 2;
+}
+
+.primary-nav a {
+    text-decoration: none;
+}
+
+/*game css here (Josh) */
+#content {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background-color: burlywood;
+    align-items: center;
+    justify-content: center;
+}
+
+#game {
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 800px;
+    height: 20vh;
+    border: solid black;
+    background-color: black;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+    justify-content: center;
+}
+
+#Game-Title {
+    color: burlywood;
+    text-align: center;
+    font-family: Shadows Into Light, serif;
+    font-size: 30px;
+}
+
+.gameBtn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#play {
+    background-color: burlywood;
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+#play :hover{
+    border-color: white;
+    background-color: white;
+}
+
+#words {
+    color: white;
+}
+
+#answer {
+    color:white;
+}
+
+/*Fran's stuff goes here*/
+.bodyFran{
+    margin: 0;
+    padding:0;
+    text-align: center;
+    background: linear-gradient(rgba(223, 37, 5, 0.5)0.5)rgba(0,0,50,0.5),url(landing.png);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.contact-title{
+  margin-right: 20px;
+  margin-top: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+.contact-title h1{
+   font-size: 32px;
+   line-height: 10px;
+   margin-bottom: 10px;
+}
+.contact-title h2
+{
+   font-size: 16px;
+}
+
+.formFran
+{
+   margin-top: 50px;
+   transition: all 4s ease-in-out;
+}
+
+.form-control
+{
+   width: 600px;
+   background: transparent;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid gray;
+   color: #fff;
+   font-size: 18px;
+   margin-bottom: 16px;
+}
+
+input
+{
+   height: 45px;
+}
+
+form.button
+{
+  background: #ff5722;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form.button:hover
+{
+background-color: #f44336;
+cursor: pointer;
+}
+
+
+/*Sean's stuff goes here*/
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat, serif;
+  }
+
+.achievements {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.achievements:hover {
+    box-shadow: 0 0 20px 0px burlywood;
+}
+
+.aboutUs{
+    color: black;
+    padding-top: 20vh;
+    background-color: burlywood;
+    width: 300px;
+    border: 15px solid  #9f5d00;
+    display: inline-block;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.5s;
+    font-family: Montserrat, serif;
+}
+
+.aboutUs:hover{
+    box-shadow: 0 0 20px 0px burlywood
+}
+
+.aboutUsTitle{
+    color: white;
+    font-family: Anton, serif;
+    text-align: center;
+}
+
+#about {
+    background-color: burlywood;
+}
+
+#community {
+    background-image: url(../img/Community.png);
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 30vh;
+}
+
+#charity {
+    background-image: url(../img/Charity.jpg);
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 30vh;
+}
+
+#family {
+    background-image: url(../img/Family.png);
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 30vh;
+}

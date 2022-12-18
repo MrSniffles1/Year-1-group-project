@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/20d93e9c08.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script src="nav.js" defer></script>    
+    <title>Realbox Games</title>
+</head>
+<body>
+    
+    <section id="landing">
+        <header class="primary-header flex">
+            <div>
+                <a href="index.html"><img src="img/Realbox Games Logo.png" alt="realbox logo" class="logo"></a>
+            </div>
+
+            <button class="mobile-toggle-button" aria-controls="primary-nav" aria-expanded="false"></button>
+
+            <nav>
+                <ul id="primary-nav" class="primary-nav flex" aria-expanded="false">
+                    <li class="active">
+                        <a href="index.html" class="font">
+                            HOME
+                        </a>
+                        <li>
+                            <a href="about.html" class="font">
+                                ABOUT US
+                            </a>
+                        
+                        <li>
+                            <a href="contact.html" class="font">
+                                CONTACT
+                            </a>
+                        </li>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="text-box">
+            <h1>Realbox Games</h1>
+            <p>Bringing the community together<br> One box at a time</p>
+            <a href="about.html" class="btn">Find out more</a>
+        </div>
+
+    </section>
+    <section id="content">
+        <section id="game">
+            <p id="Game-Title">Heads or Tails</p>
+            <p id="words">Guess Heads or Tails with the buttons below.</p>
+            <div id="option-btn" class="gameBtn-grid">
+                <button id="play" onclick="heads()">Heads</button>
+                <button id="play" onclick="tails()">Tails</button>
+            </div>
+            <div id="answer"></div>
+        </section>
+    </section>
+
+    <section id="footer">
+		<a href="contact.html"><h4>Contact Us</h4></a><br>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-youtube"></i>
+		</div>
+    </section>
+    
+</body>
+</html>
